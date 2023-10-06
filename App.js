@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, StatusBar, SafeAreaView } from 'react-native';
+import AppRotas from './src/rotas/AppRotas';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>O inicio do Brilho!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <SafeAreaView style={styles.screen}>
+    <StatusBar />
+    <AppRotas />
+    </SafeAreaView>
 }
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  }
 });
