@@ -1,5 +1,5 @@
 //Teste de Cupom
-
+import testeCupom from '../assets/cupons-teste/teste-cupom.png'
 
 //Simulando distancia do estabelecimento
 const randomDistance = (min, max) => {
@@ -17,35 +17,35 @@ const cupons = {
       {
         model: "Café Gratis",
         brand: "StarBucks",
-        // image: teste01,
+        image: testeCupom,
         distance: randomDistance(0.1, 5),
         rating: randomRating(1, 5),
       },
       {
         model: "Coma um e Doe Outro",
         brand: "McDonalds",
-        // image: teste02,
+        image: testeCupom,
         distance: randomDistance(0.1, 5),
         rating: randomRating(1, 5),
       },
       {
         model: "Terço Gratis",
         brand: "Catedral da Sé",
-        // image: teste03,
+        image: testeCupom,
         distance: randomDistance(0.1, 5),
         rating: randomRating(1, 5),
       },
       {
         model: "Entrada Gratis",
         brand: "Farol Santander",
-        // image: teste04,
+        image: testeCupom,
         distance: randomDistance(0.1, 5),
         rating: randomRating(1, 5),
       },
       {
         model: "Espetaculo Surpresa",
         brand: "Sala São Paulo",
-        // image: teste05,
+        image: testeCupom,
         distance: randomDistance(0.1, 5),
         rating: randomRating(1, 5),
       }

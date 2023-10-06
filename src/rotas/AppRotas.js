@@ -10,8 +10,8 @@ const Tab = createBottomTabNavigator();
 export default function AppRotas() {
     return <NavigationContainer>
         <Tab.Navigator>
-          <Tab.Screen name='Cupons' component={Home} />
-          <Tab.Screen name='Melhores Cupons' component={TopCuponsScreen} />
+          <Tab.Screen name='Brilho Cupons' component={Home} />
+          <Tab.Screen name='Melhores Brilho Cupons' component={TopCuponsScreen} />
         </Tab.Navigator>
       </NavigationContainer>
 }
