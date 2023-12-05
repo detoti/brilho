@@ -1,0 +1,12 @@
+{
+  "name": "brilho-icons",
+  "version": "1.0.0",
+  "description": "Icones do Brilho app",
+  "main": "index.jsx",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brilho App",
+  "license": "ISC"
+}

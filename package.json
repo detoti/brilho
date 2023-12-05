@@ -1,0 +1,47 @@
+{
+  "name": "brilho",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Brilho",
+  "repository": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build",
+    "build-cordova": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build",
+    "build-cordova-ios": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build ios",
+    "cordova-ios": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova run ios",
+    "build-cordova-android": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build android",
+    "cordova-android": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova run android"
+  },
+  "browserslist": [
+    "IOS >= 15",
+    "Safari >= 15",
+    "last 5 Chrome versions",
+    "last 5 Firefox versions"
+  ],
+  "dependencies": {
+    "axios": "^1.6.2",
+    "brilho-icons": "file:brilho-icons",
+    "dom7": "^4.0.6",
+    "framework7": "^8.3.0",
+    "framework7-react": "^8.3.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5",
+    "skeleton-elements": "^4.0.1",
+    "swiper": "^11.0.5",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "cross-env": "^7.0.3",
+    "less": "^4.2.0",
+    "postcss-preset-env": "^9.3.0",
+    "rollup": "^4.6.1",
+    "vite": "^5.0.4",
+    "vite-plugin-html": "^3.2.0"
+  }
+}

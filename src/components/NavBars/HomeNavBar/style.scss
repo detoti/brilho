@@ -1,0 +1,21 @@
+#home-nav-bar {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  //border-radius: 0 0 16px 16px;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  background-color: var(--green-400);
+  margin-bottom: 20px;
+  
+  a {
+    color: white;
+  }
+
+  [alt="Brilho logo"] {
+    width: 120px;
+  }
+}

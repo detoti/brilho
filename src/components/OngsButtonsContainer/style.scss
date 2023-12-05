@@ -1,0 +1,12 @@
+.ong-buttons-container-component {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	padding-bottom: 12px;
+  
+	.first-line {
+	  display: flex;
+	  grid-template-rows: 1fr 1fr ;
+	  gap: 12px;	
+	}
+}

@@ -1,0 +1,57 @@
+#toolbar {
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  height: 60px;
+  background-color: var(--green-400);
+  //border-radius: 12px 12px 0 0;
+  align-self: flex-end;
+  position: sticky;
+  bottom: 0;
+
+  .link-container {
+    display: flex;
+    position: relative;
+
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 8px;
+      word-wrap: break-word;
+      word-break: break-word;
+      text-align: center;
+      width: 50px;
+      color: rgb(255, 255, 255);
+    }
+
+    img {
+      width: 23px;
+    }
+
+    .selected {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50px;
+      background-color: #fff;
+      bottom: 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 0px 10px var(--yellow);
+      margin-top: 12px;
+
+      img {
+        width: 28px;
+      }
+    }
+  }
+
+  .non-selected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+  }
+}

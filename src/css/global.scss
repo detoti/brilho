@@ -1,0 +1,116 @@
+:root {
+  --green-100: #15f987;
+  --green-200: #07bb02;
+  --green-250: #07ba01;
+  --green-400: #B20D30;
+  --purple: #8753f0;
+  --black-200: #202020;
+  --gray: #b4b4b4;
+  --black-100: #000000;
+  --pink: #ef4d8e;
+  --yellow: #f5ba19;
+  --red: #b20505;
+  --dark-black-100: #181818;
+  --dark-black-200: #2c2c2c;
+
+  // CATEGORIES STYLES
+  --blue-gray-other: #607d8b;
+  --purple-family: #9c27b0;
+  --green-health: #4caf50;
+  --yellow-work: #ffeb3b;
+
+  --background-highlight: #ffffff;
+  --components-background: #fff;
+  --page-content-background: #F5F5F5;
+  --default-text-color: #000000;
+  --text-negative: #fff;
+}
+
+.dark-theme:root {
+  --page-content-background: #181818;
+  --background-highlight: #000000;
+  --components-background: #2c2c2c;
+  --default-text-color: #ffffff;
+  --text-negative: #000000;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: local("Poppins"), local("Poppins-SemiBold"),
+    url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Medium";
+  src: local("Poppins"), local("Poppins-Medium"),
+    url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: local("Poppins"), local("Poppins-Bold"),
+    url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  src: local("Poppins"), local("Poppins-Regular"),
+    url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.page-content {
+  background-color: var(--page-content-background);
+  font-family: "Poppins Regular";
+  display: grid;
+}
+
+#opening-content {
+  background-color: var(--black-100);
+}
+
+.button {
+  color: var(--background-highlight);
+  border: none;
+  text-transform: none;
+  border-radius: 16px;
+  height: 53px;
+  font-weight: 600;
+
+  a,
+  span {
+    font-size: 1.1em;
+  }
+}
+
+span {
+  font-size: 1.3em;
+}
+
+a {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+p,
+li,
+label,
+button {
+  font-size: 0.9em;
+  font-weight: 300;
+}
