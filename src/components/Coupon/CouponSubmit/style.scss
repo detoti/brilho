@@ -1,0 +1,47 @@
+// CouponForm.scss
+
+.coupon-form {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f8f8f8;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+	form {
+	  display: flex;
+	  flex-direction: column;
+  
+	  label {
+		margin-bottom: 10px;
+		font-weight: bold;
+	  }
+  
+	  input {
+		padding: 8px;
+		margin-bottom: 15px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	  }
+  
+	  button {
+		background-color: #B20D30;
+		color: white;
+		border: none;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: background-color 0.3s;
+  
+		&:hover {
+		  background-color: #45a049;
+		}
+	  }
+	}
+  }
+  

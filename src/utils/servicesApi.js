@@ -6,6 +6,6 @@
 export const servicesApi = (service) => {
 	switch (service) {
 		case "cupon":
-			return "https://brilho-api.onrender.com/cupons/cupons"
+			return "https://brilho-api.onrender.com/cupons"
 	}
 }

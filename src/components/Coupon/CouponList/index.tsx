@@ -1,7 +1,6 @@
 // CouponsList.tsx
 import React, { useEffect, useState } from 'react';
-import { getCoupons } from '../../../api/getCoupons';
-import CouponCard from './';
+import './style.scss';
 
 type Coupon = {
   id: number;
@@ -14,46 +13,52 @@ type Coupon = {
 const CouponsList: React.FC = () => {
   const [coupons, setCoupons] = useState<Coupon[]>([]);
 
-  const getCouponsData = async () => {
-    try {
-      const res = await getCoupons();
-
-      if (res.status === 200 && res.data) {
-        const parsedCoupons = parseCouponString(res.data);
-        setCoupons(parsedCoupons);
-      } else {
-        console.error('Erro ao buscar cupons. Resposta inesperada:', res);
-      }
-    } catch (error) {
-      console.error('Erro ao buscar cupons', error);
-    }
-  };
-
   useEffect(() => {
+    const getCouponsData = async () => {
+      try {
+        const response = await fetch('https://brilho-api.onrender.com/cupons');
+
+        if (!response.ok) {
+          console.error('Erro ao buscar cupons. Resposta inesperada:', response);
+          return;
+        }
+
+        const data = await response.json();
+        const parsedCoupons = parseCoupons(data);
+        setCoupons(parsedCoupons);
+      } catch (error) {
+        console.error('Erro ao buscar cupons', error.message);
+      }
+    };
+
     getCouponsData();
   }, []);
 
-  const parseCouponString = (couponString: string): Coupon[] => {
-    return couponString.split('\n').map((couponLine) => {
-      const [id, nome, codigo, validade, valorDoCupom] = couponLine
-        .replace(/ID: |Nome: |Codigo: |Validade: |Valor do cupom: /g, '')
-        .split(', ');
-
+  const parseCoupons = (data: any[]): Coupon[] => {
+    return data.map((couponData: any) => {
       return {
-        id: parseInt(id, 10),
-        nome,
-        codigo,
-        validade: new Date(validade),
-        valorDoCupom: parseFloat(valorDoCupom),
+        id: couponData.id,
+        nome: couponData.cupomName,
+        codigo: couponData.cupomCode,
+        validade: new Date(couponData.cupomDate),
+        valorDoCupom: couponData.cupomValue,
       };
     });
   };
 
   return (
-    <div>
-      {coupons.map((coupon) => (
-        <CouponCard key={coupon.id} coupon={coupon} />
-      ))}
+    <div className="coupons-list">
+      <ul>
+        {coupons.map((coupon) => (
+          <li key={coupon.id}>
+            <strong>Cupom:</strong> {coupon.nome}<br />
+            <strong>Código:</strong> {coupon.codigo}<br />
+            <strong>Validade:</strong> {coupon.validade.toDateString()}<br />
+            <strong>Valor do Cupom:</strong> R$ {coupon.valorDoCupom.toFixed(2)}<br />
+            <hr />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
