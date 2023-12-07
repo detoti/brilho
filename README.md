@@ -1,6 +1,11 @@
 # Brilho ✨
 O objetivo deste projeto é desenvolver um aplicativo de caráter social que permita que os usuários resgatem cupons no Centro Velho de São Paulo, esse projeto será desenvolvido durante o Terceiro Semestre do curso Análise e Desenvolvimento de Sistemas do Centro Universitário Belas Artes de São Paulo.
 
+## 🧡 Nosso layout 
+
+![image](https://github.com/detoti/brilho/assets/77704621/f9832952-8f3a-429e-b187-c6d7556428d6)
+
+
 ## ⚙️ Install Dependencies
 
 Para configurar o ambiente na sua máquina se faz necessário o uso do seguinte comando:
