@@ -1,8 +1,27 @@
-# Brilho
+# Brilho ✨
+O objetivo deste projeto é desenvolver um aplicativo de caráter social que permita que os usuários resgatem cupons no Centro Velho de São Paulo, esse projeto será desenvolvido durante o Terceiro Semestre do curso Análise e Desenvolvimento de Sistemas do Centro Universitário Belas Artes de São Paulo.
 
-## Framework7 CLI Options
+## ⚙️ Install Dependencies
 
-Framework7 app created with following options:
+Para configurar o ambiente na sua máquina se faz necessário o uso do seguinte comando:
+```
+npm install
+```
+
+## NPM Scripts
+
+* 🔥 `start` - run development server
+* 🔧 `dev` - run development server
+* 🔧 `build` - build web app for production
+* 📱 `build-cordova` - build cordova app
+* 📱 `build-cordova-ios` - build cordova iOS app
+* 📱 `cordova-ios` - run dev build cordova iOS app
+* 📱 `build-cordova-android` - build cordova Android app
+* 📱 `cordova-android` - run dev build cordova Android app
+
+## ✉️ Framework7 CLI Options
+
+O aplicativo Framework7 criado com as seguintes opções:
 
 ```
 {
@@ -101,60 +120,25 @@ Framework7 app created with following options:
 }
 ```
 
-## Install Dependencies
-
-First of all we need to install dependencies, run in terminal
-```
-npm install
-```
-
-## NPM Scripts
-
-* 🔥 `start` - run development server
-* 🔧 `dev` - run development server
-* 🔧 `build` - build web app for production
-* 📱 `build-cordova` - build cordova app
-* 📱 `build-cordova-ios` - build cordova iOS app
-* 📱 `cordova-ios` - run dev build cordova iOS app
-* 📱 `build-cordova-android` - build cordova Android app
-* 📱 `cordova-android` - run dev build cordova Android app
-
-## Vite
-
-There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Vite config located in `vite.config.js`.
-## Cordova
-
-Cordova project located in `cordova` folder. You shouldn't modify content of `cordova/www` folder. Its content will be correctly generated when you call `npm run cordova-build-prod`.
-
-
-
 ## Assets
 
-Assets (icons, splash screens) source images located in `assets-src` folder. To generate your own icons and splash screen images, you will need to replace all assets in this directory with your own images (pay attention to image size and format), and run the following command in the project directory:
+Imagens de origem de ativos (ícones, telas iniciais) localizadas na pasta `assets-src`. Para gerar seus próprios ícones e imagens de tela inicial, você precisará substituir todos os ativos neste diretório por suas próprias imagens (preste atenção ao tamanho e formato da imagem) e executar o seguinte comando no diretório do projeto:
 
 ```
 framework7 assets
 ```
 
-Or launch UI where you will be able to change icons and splash screens:
+Ou inicie a UI onde você poderá alterar ícones e telas iniciais:
 
 ```
 framework7 assets --ui
 ```
 
 
+# 🛠️ Tecnologias 
+- Este projeto foi desenvolvido em React e possui conexão com a seguinte api: [Brilho Backend][https://github.com/thaizacn/brilho-python/edit/main/README.md](https://github.com/thaizacn/brilho-python)
 
-## Documentation & Resources
+# 🎁 Agradecimentos
+Esse projeto foi feito com muito amor pela equipe "Café sem Açucar" e poderá ser utilizado como veículo de estudo por qualquer um que, assim como nós, tenha o desejo genuíno por mudar o mundo. Nós conseguimos. Juntos.
 
-* [Framework7 Core Documentation](https://framework7.io/docs/)
-
-* [Framework7 React Documentation](https://framework7.io/react/)
-
-* [Framework7 Icons Reference](https://framework7.io/icons/)
-* [Community Forum](https://forum.framework7.io)
-
-## Support Framework7
-
-Love Framework7? Support project by donating or pledging on:
-- Patreon: https://patreon.com/framework7
-- OpenCollective: https://opencollective.com/framework7
+⌨️ com ❤️ por Café sem Açúcar ☕ 
